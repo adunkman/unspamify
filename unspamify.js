@@ -8,6 +8,7 @@
  *  - <a>email at domain dot com</a>
  *
  * Author: Andrew Dunkman
+ * License: MIT
  */
 (function($) {
    $.fn.unspamify = function() {

@@ -22,3 +22,6 @@ And then your page is all like...
 <a class="unspamify-me" href="mailto:email@domain.com">display text here</a>
 <a class="unspamify-me" href="mailto:email@domain.com">email@domain.com</a>
 ```
+
+# License
+Copyright (c) 2011-2012 [Andrew Dunkman <andrew@dunkman.org>](mailto:andrew@dunkman.org). Released under MIT License.
