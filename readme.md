@@ -24,4 +24,4 @@ And then your page is all like...
 ```
 
 # License
-Copyright (c) 2011-2012 [Andrew Dunkman <andrew@dunkman.org>](mailto:andrew@dunkman.org). Released under MIT License.
+Copyright (c) 2011-2012 Andrew Dunkman. Released under MIT License.
