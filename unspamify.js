@@ -10,7 +10,7 @@
  * Author: Andrew Dunkman
  * License: MIT
  */
-(function($) {
+(function ($) {
    $.fn.unspamify = function() {
       return this.each(function () {
          var $this = $(this), email, display,
