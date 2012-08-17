@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="utf-8">
+      <title>Unspamify tests</title>
+      <link rel="stylesheet" href="lib/mocha.css" />
+      <script src="lib/jquery.js"></script>
+      <script src="lib/expect.js"></script>
+      <script src="lib/mocha.js"></script>
+
+      <script>mocha.setup('bdd')</script>
+
+      <script src="../unspamify.js"></script>
+      <script src="test.unspamify.js"></script>
+
+      <script>$(document).ready(mocha.run);</script>
+   </head>
+   <body>
+      <div id="mocha"></div>
+   </body>
+</html>

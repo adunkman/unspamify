@@ -13,27 +13,22 @@
 (function ($) {
    $.fn.unspamify = function() {
       return this.each(function () {
-         var $this = $(this), email, display,
-             text = new String($this.html()),
-             arr1 = text.split(':');
+         var $this = $(this),
+             text = $this.text(),
+             parts, email, label;
 
-         if (typeof (arr1[1]) == 'undefined') {
-            var arr2 = arr1[0].split(' '),
-                user = arr2[0], domain = arr2[2], ext = arr2[4];
-
-            email = user + '@' + domain + '.' + ext;
-            display = email;
-         }
-         else {
-            var arr2 = arr1[1].split(' '),
-                user = arr2[1], domain = arr2[3], ext = arr2[5];
-
-            email = user + '@' + domain + '.' + ext;
-            display = arr1[0];
+         if (text.indexOf(":") > 0) {
+            parts = text.split(":");
+            label = parts[0];
+            text = parts[1];
          }
 
-         $this.attr("href", "mailto:" + email);
-         $this.html(display);
+         parts = text.split(" at ");
+         email = parts[0] + "@" + parts[1].replace(/ dot /g, ".");
+         label = label || email;
+
+         $this.attr("href", "mailto:" + email.trim());
+         $this.text(label.trim());
       });
    };
 })(jQuery);
