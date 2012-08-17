@@ -23,5 +23,8 @@ And then your page is all like...
 <a class="unspamify-me" href="mailto:email@domain.com">email@domain.com</a>
 ```
 
+# Tests
+[Run the tests](http://adunkman.github.com/unspamify/test/runner.html) for yourself.
+
 # License
 Copyright (c) 2011-2012 Andrew Dunkman. Released under MIT License.
