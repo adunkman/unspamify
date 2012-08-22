@@ -59,22 +59,16 @@
       });
 
       it("works when String.trim() isn't available (in Internet Explorer)", function () {
-         var trim = String.prototype.trim,
-             element = $("<a>test at example dot com</a>");
-
+         var trim = String.prototype.trim;
          String.prototype.trim = undefined;
-         try { element.unspamify(); }
-         catch (error) {
-            // Mocha tests rely on string.trim, put it back, quick!
-            String.prototype.trim = trim;
-            throw error;
-         }
-         String.prototype.trim = trim;
 
-         var text = element.text(), href = element.attr("href");
+         var element = $("<a>test at example dot com</a>").unspamify(),
+             text = element.text(), href = element.attr("href");
 
          expect(text).to.be("test@example.com");
          expect(href).to.be("mailto:test@example.com");
+
+         String.prototype.trim = trim;
       });
 
    });
