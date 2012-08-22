@@ -11,7 +11,9 @@
  * License: MIT
  */
 (function ($) {
-   $.fn.unspamify = function() {
+   var trim = function (input) { return input.replace(/^\s+|\s+$/g, ""); };
+
+   $.fn.unspamify = function () {
       return this.each(function () {
          var $this = $(this),
              text = $this.text(),
@@ -27,8 +29,8 @@
          email = parts[0] + "@" + parts[1].replace(/ dot /g, ".");
          label = label || email;
 
-         $this.attr("href", "mailto:" + email.trim());
-         $this.text(label.trim());
+         $this.attr("href", "mailto:" + trim(email));
+         $this.text(trim(label));
       });
    };
 })(jQuery);
