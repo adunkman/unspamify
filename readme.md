@@ -1,3 +1,6 @@
+# Unspamify!
+[![Build Status](https://secure.travis-ci.org/adunkman/unspamify.png?branch=master)](https://travis-ci.org/adunkman/unspamify)
+
 A jQuery plugin to convert "spam-concious" "links" to mailto: links.
 
 This plugin reads the `.text()` of an element and adds a "href" attribute that is a mailto link. Confused? Examples!
