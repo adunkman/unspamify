@@ -1,0 +1,12 @@
+{
+  "name": "unspamify",
+  "version": "0.0.0",
+  "devDependencies": {
+    "mocha": "1.7.0",
+    "jquery": "1.8.2",
+    "expect.js": "0.2.0"
+  },
+  "scripts": {
+    "test": "node_modules/.bin/mocha --reporter spec test.js"
+  }
+}
