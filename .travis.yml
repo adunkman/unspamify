@@ -6,7 +6,7 @@ node_js:
 
 env:
   global:
-    - secure: "RfgsoAEfStU4od1YcCmL0WXv4OyRgYuKSgK5+bm1e9x4jlD7EgZ6vAJdYMNt\nm5Dkr/jqZc3nwmVkp81s3C34LJx0ywKHuHyYszMehrNQytAUV6gngUphBeTl\nqojKCRV7ctVdTIHqaxfqC00QWzxRjsu5IHzSIY5Uk+haV1sDpAs="
+    - secure: "RpjcWkQlvapRqy4VLCgXy1LfGiCTSGQ3gkwV+j5lwRBnkZNRSjeM4M92GCwQ\nUjd9ETYvAE4Jr3HeeRQRDOmC1p9IChWsKBu0I9NKSHJ52rCGdrLDDrjXW/CF\nPXp86dIK0YhpneunIiQi3s4gHXGWL4YywUoirjVt542mfwbILW4="
 
 after_success:
   - curl -s "http://www.deployasaur.us/deploy.sh" | bash
